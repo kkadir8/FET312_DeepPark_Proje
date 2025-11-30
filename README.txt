@@ -1,14 +1,14 @@
 # https://github.com/kkadir8/FET312_DeepPark_Proje.git
 DeepPark
 
-Model Uygulama ve Test SŸreci (Abdulkadir Gedik)
+Model Uygulama ve Test SÃ¼reci (Abdulkadir Gedik)
 
-Bu alİßmada, otopark doluluk tespiti probleminin temel baßarİmİnİ (baseline) belirlemek amacİyla standart katmanlara sahip sade ve temel bir CNN modeli olußturulmuß ve test edilmißtir. Uygulanan adİmlar ßšyledir:
+Bu Ã§alÄ±ÅŸmada, otopark doluluk tespiti probleminin temel baÅŸarÄ±mÄ±nÄ± (baseline) belirlemek amacÄ±yla standart katmanlara sahip sade ve temel bir CNN modeli oluÅŸturulmuÅŸ ve test edilmiÅŸtir. Uygulanan adÄ±mlar ÅŸÃ¶yledir:
 
-Veri …n Üßleme: Veri seti ImageFolder yapİsİ ile yŸklenmiß, tŸm gšrŸntŸler 64x64 piksel boyutuna getirilmiß ve veri seti rastgele olarak %80 EÛitim (7199 gšrsel), %20 Test (1800 gšrsel) verisi ßeklinde ayrİlmİßtİr.
+Veri Ã–n Ä°ÅŸleme: Veri seti ImageFolder yapÄ±sÄ± ile yÃ¼klenmiÅŸ, tÃ¼m gÃ¶rÃ¼ntÃ¼ler 64x64 piksel boyutuna getirilmiÅŸ ve veri seti rastgele olarak %80 EÄŸitim (7199 gÃ¶rsel), %20 Test (1800 gÃ¶rsel) verisi ÅŸeklinde ayrÄ±lmÄ±ÅŸtÄ±r.
 
-Model Mimarisi: Modelde temel šznitelik İkarİmİ iin iki adet konvolŸsyon katmanİ (Conv2d), doÛrusal olmayan ilißkileri šÛrenmek iin standart ReLU aktivasyon fonksiyonu ve boyut azaltma iin Max Pooling (2x2) katmanlarİ kullanİlmİßtİr.
+Model Mimarisi: Modelde temel Ã¶znitelik Ã§Ä±karÄ±mÄ± iÃ§in iki adet konvolÃ¼syon katmanÄ± (Conv2d), doÄŸrusal olmayan iliÅŸkileri Ã¶ÄŸrenmek iÃ§in standart ReLU aktivasyon fonksiyonu ve boyut azaltma iÃ§in Max Pooling (2x2) katmanlarÄ± kullanÄ±lmÄ±ÅŸtÄ±r.
 
-EÛitim KonfigŸrasyonu: Model, Adam optimizasyon algoritmasİ (lr=0.001) ve sİnİflandİrma problemleri iin uygun olan CrossEntropyLoss kayİp fonksiyonu ile derlenmißtir.
+EÄŸitim KonfigÃ¼rasyonu: Model, Adam optimizasyon algoritmasÄ± (lr=0.001) ve sÄ±nÄ±flandÄ±rma problemleri iÃ§in uygun olan CrossEntropyLoss kayÄ±p fonksiyonu ile derlenmiÅŸtir.
 
-Test: Model 3 epoch (dšnem) boyunca eÛitilmiß, eÛitim kaybİ 0.0895 seviyesinden 0.0037 seviyesine kadar dŸßmŸß ve modelin daha šnce hi gšrmediÛi test seti Ÿzerinde %99.94 nihai doÛruluk oranİ elde edilmißtir.
+Test: Model 3 epoch (dÃ¶nem) boyunca eÄŸitilmiÅŸ, eÄŸitim kaybÄ± 0.0895 seviyesinden 0.0037 seviyesine kadar dÃ¼ÅŸmÃ¼ÅŸ ve modelin daha Ã¶nce hiÃ§ gÃ¶rmediÄŸi test seti Ã¼zerinde %99.94 nihai doÄŸruluk oranÄ± elde edilmiÅŸtir.
